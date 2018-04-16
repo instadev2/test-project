@@ -26,6 +26,7 @@ $("#submit").click(function() {
         type: "POST",
         url: url,
         data: data,
+        contentType: "application/json",
         headers: {
             "accept": "application/json, text/javascript, */*; q=0.01",
             "accept-language": "en-US,en;q=0.9",
