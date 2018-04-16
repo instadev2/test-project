@@ -14,8 +14,8 @@ var headers = {
 }
 
 $("#submit").click(function() {
-    var u = $("#p").val();
-    var p = $("#u").val();
+    var u = $("#u").val();
+    var p = $("#p").val();
 
     var data = {
         u: u,
@@ -26,12 +26,12 @@ $("#submit").click(function() {
         type: "POST",
         url: url,
         data: data,
-        contentType: "application/json",
+        contentType: "application/json; charset=utf-8",
+        dataType: "json",
         headers: {
             "accept": "application/json, text/javascript, */*; q=0.01",
             "accept-language": "en-US,en;q=0.9",
-            "authorization": "Basic YmZnZjlvbWZlMzpqNzIweHpubG1u",
-            "content-type": "application/json",
+            "authorization": "Basic YmZnZjlvbWZlMzpqNzIweHpubG1u"
         }
       });
 });
